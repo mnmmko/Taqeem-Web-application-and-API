@@ -23,7 +23,7 @@ Route::group([
     Route::post('/loginss', 'Api\AuthController@login');
     Route::post('/registers', 'Api\AuthController@register');
     Route::post('/refresh', 'Api\AuthController@refresh');
-    Route::get('/logouts', 'Api\AuthController@logout');
+    Route::post('/logouts', 'Api\AuthController@logout');
     Route::get('/userprofile', 'Api\AuthController@userProfile');
     Route::post('add-review','Api\ReviewController@add_review');
 
